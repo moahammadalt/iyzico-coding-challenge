@@ -5,6 +5,7 @@ import selectedCharacter from './selected_character';
 import charactersList from './characters_list';
 import charactersPageNumber from './characters_page_number';
 import episodesLimit from './episodes_limit';
+import scrollIndicator from './scroll_indicator'; 
 
 export default persistCombineReducers({ 
 	key: 'root',
@@ -15,5 +16,6 @@ export default persistCombineReducers({
 	selectedCharacter,
 	charactersList,
 	charactersPageNumber,
-	episodesLimit
+	episodesLimit,
+	scrollIndicator
 });

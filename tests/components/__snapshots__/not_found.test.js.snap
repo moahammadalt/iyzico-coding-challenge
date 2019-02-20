@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFound /> Snapshot test for NotFound component Should match the NotFound snapshot 1`] = `
+<div
+  className="text-center c-w"
+>
+  <h1>
+    This path is not found
+  </h1>
+</div>
+`;

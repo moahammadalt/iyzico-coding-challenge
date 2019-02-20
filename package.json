@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
-    "react-color": "^2.17.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
@@ -33,17 +31,20 @@
   ],
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
-    "chai": "^4.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
-    "enzyme-to-json": "^3.3.5",
     "jest-cli": "^24.1.0",
-    "react-test-renderer": "^16.8.2",
+    "react-test-renderer": "^16.7.0",
     "redux-mock-store": "^1.5.3"
   },
   "jest": {
+    "verbose": true,
     "setupFilesAfterEnv": [
-      "./tests/setup/setupEnzyme.js"
-    ]
+      "<rootDir>/tests/setup/setupEnzyme.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/setup/mediaFileTransformer.js",
+      "\\.(css|sass)$": "<rootDir>/tests/setup/styleMock.js"
+    }
   }
 }

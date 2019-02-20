@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BackButton /> Snapshot test for BackButton component Should match the BackButton snapshot 1`] = `
+<div
+  className="back-btn-container col-md-1"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="sorry, not available now"
+      src="test-file-stub"
+    />
+  </a>
+</div>
+`;

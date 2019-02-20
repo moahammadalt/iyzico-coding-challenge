@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getCharacter, getEpisode } from 'rickmortyapi';
-import { isObjEmpty } from '../globals/helper';
 import CharacterDetails from '../components/character_details';
 import BackButton from '../components/back_button';
-import { handleError } from '../globals/helper';
+import { handleError, checkValue } from '../globals/helper';
 
 class CharacterDetailsContainer extends Component {
 
@@ -34,7 +33,6 @@ class CharacterDetailsContainer extends Component {
       episodesList = episodesList instanceof Array ? episodesList : [episodesList];
       this.props.setSelectedCharacter({...characterDetails,  episodesList}); // dispatch SET_SELECTED_CHARACHATER action
       this.props.setLoadingSpinnerStatus(false);
-      console.log('characterDetails', this.props.selectedCharacter);
     }
     catch(err) {
       handleError(err);
@@ -47,7 +45,11 @@ class CharacterDetailsContainer extends Component {
     this.props.setSelectedCharacter({}); 
   }
 
-  getEpisodesIds(characterDetails) {
+  getEpisodesIds(characterDetails) { // returns an array of ids like [1, 6, 4, etc...]
+    if(!checkValue(characterDetails.episode) || !(characterDetails.episode  instanceof Array)){
+      return [];
+    }
+
     return characterDetails.episode.slice(characterDetails.episode.length - this.props.episodesLimit, characterDetails.episode.length).map(url => url.split('/').pop());
   }
 
@@ -56,7 +58,9 @@ class CharacterDetailsContainer extends Component {
       <div className="character-container">
         { this.props.loadingSpinner ? <div className="loading"></div> : null }
         <BackButton to='/' />
-        {!isObjEmpty(this.props.selectedCharacter) && <CharacterDetails />}
+        {
+          checkValue(this.props.selectedCharacter) &&
+          <CharacterDetails />}
       </div>
     );
   }

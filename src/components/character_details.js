@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 
 const CharacterDetails = (props) => (
   <div className="col-md-11">
     <div className="col-md-6">
-      <img className="character-img-left rounded" src={props.selectedCharacter.image} alt="Character image" />
+      <img className="character-img-left rounded" src={props.selectedCharacter.image} alt="sorry, not available now" />
     </div>
     <div className="col-md-6">
       <div className="character-details-right">

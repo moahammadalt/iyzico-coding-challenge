@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeContainer /> Snapshot test for home page components Should match the HomeContainer snapshot after data loading 1`] = `
+<div
+  className="home-container"
+>
+  <div
+    className="container p-t-30"
+  >
+    <div
+      className="col-md-3 col-sm-6"
+    >
+      <a
+        className="character-main-card"
+        href="/character/1"
+        onClick={[Function]}
+      >
+        <div
+          className="character-main-card"
+        >
+          <img
+            alt="sorry, not available now"
+            className="character-main-img-top rounded"
+          />
+          <div
+            className="character-name-bottom"
+          >
+            <h3
+              className="character-name"
+            >
+              Rick Sanchez
+            </h3>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<HomeContainer /> Snapshot test for home page components Should match the HomeContainer snapshot before data loading 1`] = `
+<div
+  className="home-container"
+>
+  <div
+    className="container p-t-30"
+  />
+</div>
+`;
+
+exports[`<HomeContainer /> Snapshot test for home page components Should match the HomeContainer snapshot when all data is being fetched 1`] = `
+<div
+  className="home-container"
+>
+  <div
+    className="container p-t-30"
+  >
+    <div
+      className="col-md-3 col-sm-6"
+    >
+      <a
+        className="character-main-card"
+        href="/character/1"
+        onClick={[Function]}
+      >
+        <div
+          className="character-main-card"
+        >
+          <img
+            alt="sorry, not available now"
+            className="character-main-img-top rounded"
+          />
+          <div
+            className="character-name-bottom"
+          >
+            <h3
+              className="character-name"
+            >
+              Rick Sanchez
+            </h3>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <h1
+    className="text-center c-w m-b-30"
+  >
+    The End.
+  </h1>
+</div>
+`;
+
+exports[`<HomeContainer /> Snapshot test for home page components Should match the HomeContainer snapshot while data loading 1`] = `
+<div
+  className="home-container"
+>
+  <div
+    className="loading"
+  />
+  <div
+    className="container p-t-30"
+  />
+</div>
+`;

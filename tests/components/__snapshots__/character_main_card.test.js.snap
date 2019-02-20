@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CharacterMainCard /> Snapshot test for CharacterMainCard component Should match the CharacterMainCard snapshot when character data is empty 1`] = `
+<div
+  className="character-main-card"
+>
+  <img
+    alt="sorry, not available now"
+    className="character-main-img-top rounded"
+  />
+  <div
+    className="character-name-bottom"
+  >
+    <h3
+      className="character-name"
+    />
+  </div>
+</div>
+`;
+
+exports[`<CharacterMainCard /> Snapshot test for CharacterMainCard component Should match the CharacterMainCard snapshot when character data is not empty 1`] = `
+<div
+  className="character-main-card"
+>
+  <img
+    alt="sorry, not available now"
+    className="character-main-img-top rounded"
+    src="test"
+  />
+  <div
+    className="character-name-bottom"
+  >
+    <h3
+      className="character-name"
+    >
+      test
+    </h3>
+  </div>
+</div>
+`;

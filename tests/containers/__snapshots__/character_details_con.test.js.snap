@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CharacterDetailsContainer /> Snapshot test for character details components Should match the CharacterDetailsContainer snapshot after character data loading 1`] = `
+<div
+  className="character-container"
+>
+  <div
+    className="back-btn-container col-md-1"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="sorry, not available now"
+        src="test-file-stub"
+      />
+    </a>
+  </div>
+  <div
+    className="col-md-11"
+  >
+    <div
+      className="col-md-6"
+    >
+      <img
+        alt="sorry, not available now"
+        className="character-img-left rounded"
+      />
+    </div>
+    <div
+      className="col-md-6"
+    >
+      <div
+        className="character-details-right"
+      >
+        <div
+          className="character-detail-field border-bottom row"
+        >
+          <label
+            className="col-sm-4"
+          >
+            NAME:
+          </label>
+          <p
+            className="col-sm-8"
+          >
+            test
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<CharacterDetailsContainer /> Snapshot test for character details components Should match the CharacterDetailsContainer snapshot before character data loading 1`] = `
+<div
+  className="character-container"
+>
+  <div
+    className="back-btn-container col-md-1"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="sorry, not available now"
+        src="test-file-stub"
+      />
+    </a>
+  </div>
+</div>
+`;
